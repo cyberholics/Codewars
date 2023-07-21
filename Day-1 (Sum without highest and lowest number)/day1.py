@@ -8,5 +8,13 @@ Example
 
 ## Solution
 
+def sum_array(arr):
+    try:
+        arr.remove(max(arr))
+        arr.remove(min(arr))
+        return sum(arr)
+    except:
+        return 0
 
 ## Testing
+print(sum_array([2,4,5,1,3,5,6,]))
